@@ -16,4 +16,4 @@ mongoose.connect('mongodb+srv://challengeUser:WUMglwNBaydH8Yvu@challenge-xzwqd.m
 app.use('/', router);
 
 //app serving on port 8081
-app.listen('8081', ()=>{console.log('app listening on port 8081')});
+app.listen(process.env.PORT || 8081, ()=>{console.log(`app listening on port ${process.env.PORT}`)});
